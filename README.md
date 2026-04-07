@@ -14,9 +14,11 @@ A Python-based threat detection system that analyzes Windows Event Logs  (Sysmon
 - XML Parsing
 
 **How to Run**
+
 python src/main.py
 
 **Sample Output**
+
 {
   "event_id": 1,
   "alert": "Suspicious process creation"
