@@ -1,1 +1,42 @@
-
+[
+    {
+        "type": "Suspicious PowerShell Execution",
+        "severity": "HIGH",
+        "timestamp": "2026-04-07T10:00:00Z",
+        "mitre_technique": "T1059",
+        "description": "Encoded PowerShell command execution",
+        "event": {
+            "event_id": "1",
+            "timestamp": "2026-04-07T10:00:00Z",
+            "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "CommandLine": "powershell.exe -EncodedCommand aW52b2tlLW1hbGljaW91cw==",
+            "User": "DESKTOP\\User"
+        }
+    },
+    {
+        "type": "Registry Persistence Detected",
+        "severity": "HIGH",
+        "timestamp": "2026-04-07T10:05:00Z",
+        "mitre_technique": "T1547",
+        "description": "Registry Run key persistence mechanism",
+        "event": {
+            "event_id": "13",
+            "timestamp": "2026-04-07T10:05:00Z",
+            "TargetObject": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\malware",
+            "Details": "Added persistence key"
+        }
+    },
+    {
+        "type": "Suspicious File Created in Temp",
+        "severity": "MEDIUM",
+        "timestamp": "2026-04-07T10:10:00Z",
+        "mitre_technique": "T1105",
+        "description": "Suspicious executable dropped in temp directory",
+        "event": {
+            "event_id": "11",
+            "timestamp": "2026-04-07T10:10:00Z",
+            "TargetFilename": "C:\\Users\\User\\AppData\\Local\\Temp\\evil.exe",
+            "Image": "C:\\Windows\\System32\\cmd.exe"
+        }
+    }
+]
