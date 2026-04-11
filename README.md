@@ -1,4 +1,4 @@
-**
+
  # 🛡️ Windows Threat Detector (Sysmon-Based)
 
 A Python-based threat detection engine that analyzes Sysmon logs to identify suspicious activities such as malware execution, persistence mechanisms, and file-based attacks.
