@@ -1,4 +1,3 @@
-# **Windows-Threat-Detection-using-Sysmon-Logs
 **
  # 🛡️ Windows Threat Detector (Sysmon-Based)
 
